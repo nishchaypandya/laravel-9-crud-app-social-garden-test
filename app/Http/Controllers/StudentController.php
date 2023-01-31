@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\Student;
 use Illuminate\Http\Request;
 
+// this is main controller for stuydent related all functions
+
+
 class StudentController extends Controller
 {
     /**
@@ -12,6 +15,8 @@ class StudentController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    
+//     to view index page
     public function index()
     {
         $data = Student::latest()->paginate(5);
